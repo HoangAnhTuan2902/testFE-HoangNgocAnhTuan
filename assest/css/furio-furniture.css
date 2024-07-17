@@ -1,0 +1,125 @@
+#clear {
+    clear: both;
+}
+
+#furio-furniture {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+#furio-furniture::after {
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    height: 1px;
+    content: "";
+    bottom: -100px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #D8D8D8;
+    border: 1px solid #D8D8D8
+}
+
+#furio-furniture .title {
+    font-family: var(--font-medium);
+}
+
+#furio-furniture .title,
+#furio-furniture .slogan {
+    text-align: center;
+}
+
+#furio-furniture .slogan {
+    color: #616161;
+}
+
+#furio-furniture .row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#furio-furniture .row .column {
+    display: flex;
+}
+
+#furio-furniture .row .column img {
+    width: inherit;
+    height: auto;
+    padding: 12px;
+}
+
+#furio-furniture .row .col-1,
+#furio-furniture .row .col-3 {
+    align-items: flex-end;
+}
+
+#furio-furniture .row .col-1 {
+    align-self: flex-end;
+}
+
+
+
+#furio-furniture .row .col-2 {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+#furio-furniture .row .col-4,
+#furio-furniture .row .col-5 {
+    align-items: flex-start;
+}
+
+#furio-furniture .row .col-3,
+#furio-furniture .row .col-5 {
+    float: left;
+    margin-left: auto;
+}
+
+
+
+#furio-furniture .title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+
+}
+
+#furio-furniture .slogan {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5 {
+        flex: 1 1 33.33%;
+    }
+
+    #furio-furniture .row {
+        flex-direction: column;
+        height: 50%;
+        width: 50%;
+    }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5 {
+        flex: 1 1 100%;
+    }
+}

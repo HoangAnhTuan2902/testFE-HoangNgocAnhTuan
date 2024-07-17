@@ -1,0 +1,111 @@
+:root {
+    --font-bold: 'Gilroy-Bold', sans-serif;
+    --font-heavy: 'Gilroy-Heavy', sans-serif;
+    --font-light: 'Gilroy-Light', sans-serif;
+    --font-medium: 'Gilroy-Medium', sans-serif;
+    --font-regular: 'Gilroy-Regular', sans-serif;
+}
+
+#explore {
+    height: 670px;
+    background-color: #FCF8F3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#explore .inner-peace {
+    position: relative;
+    width: 480px;
+    height: 582px;
+    background-image: url("../images/Rectangle.png");
+}
+
+#explore .inner-peace div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    Width: 258px;
+    Height: 130px;
+    background-color: #FFFFFFB8;
+    padding: 36px;
+
+}
+
+#explore .inner-peace div p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+#explore .inner-peace div button {
+    position: absolute;
+    bottom: 0;
+    right: -52px;
+    padding: 12px 20px;
+    color: #FCF8F3;
+    background: #E89F71;
+
+}
+
+#explore .inner-peace div h4 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+
+}
+
+#explore .text {
+    width: 30%;
+}
+
+#explore .text * {
+    margin: 10px 0;
+
+}
+
+#explore .text h2 {
+    font-family: var(--font-medium);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+
+}
+
+#explore .text p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+#explore .text button {
+    background-color: #E89F71;
+    padding: 12px 24px;
+    color: #FCF8F3;
+}
+
+@media (max-width: 480px) {
+    .wrapper #explore {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .wrapper #explore .text {
+        position: absolute;
+        z-index: 10;
+        top: 140px;
+        left: 24px;
+        width: 80%;
+        background-color: #FFFFFFB8;
+        padding: 10px;
+    }
+}
